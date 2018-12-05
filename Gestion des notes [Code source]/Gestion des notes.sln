@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestion des notes", "Gestion des notes [Youness CHAOUI - Osama BENBAHA]\Gestion des notes.csproj", "{ED4D0108-36EE-408F-A9AE-FE6E46D17565}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED4D0108-36EE-408F-A9AE-FE6E46D17565}.Debug|x86.ActiveCfg = Debug|x86
+		{ED4D0108-36EE-408F-A9AE-FE6E46D17565}.Debug|x86.Build.0 = Debug|x86
+		{ED4D0108-36EE-408F-A9AE-FE6E46D17565}.Release|x86.ActiveCfg = Release|x86
+		{ED4D0108-36EE-408F-A9AE-FE6E46D17565}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

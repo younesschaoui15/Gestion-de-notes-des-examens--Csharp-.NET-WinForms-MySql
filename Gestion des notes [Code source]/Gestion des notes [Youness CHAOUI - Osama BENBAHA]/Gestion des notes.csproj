@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED4D0108-36EE-408F-A9AE-FE6E46D17565}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gestion_des_notes__Youness_CHAOUI___Osama_BENBAHA_</RootNamespace>
+    <AssemblyName>Gestion des notes [Youness CHAOUI - Osama BENBAHA]</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>contract_wrL_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E17DAA1A639BB95FE01C998E2393225773E5B074</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Gestion des notes_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\Downloads\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>D:\ETUDES\COURS\Ecoles\ENSA Agadir\4ème année\S1\J2EE &amp; DotNET (Youness BOUKOUCHI)\dotNet\TP\Fichier DLL\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>D:\ETUDES\COURS\Ecoles\ENSA Agadir\4ème année\S1\J2EE &amp; DotNET (Youness BOUKOUCHI)\dotNet\TP\Fichier DLL\v4.0\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>D:\ETUDES\COURS\Ecoles\ENSA Agadir\4ème année\S1\J2EE &amp; DotNET (Youness BOUKOUCHI)\dotNet\TP\Fichier DLL\v4.0\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>D:\ETUDES\COURS\Ecoles\ENSA Agadir\4ème année\S1\J2EE &amp; DotNET (Youness BOUKOUCHI)\dotNet\TP\Fichier DLL\v4.0\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\forms\aboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\forms\aboutUs.Designer.cs">
+      <DependentUpon>aboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\forms\adminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\forms\adminForm.Designer.cs">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\forms\authentificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\forms\authentificationForm.Designer.cs">
+      <DependentUpon>authentificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\forms\loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\forms\loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\test\mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\test\mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\forms\MDI_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\forms\MDI_Form.Designer.cs">
+      <DependentUpon>MDI_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\test\mainTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\test\mainTestForm.Designer.cs">
+      <DependentUpon>mainTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\test\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\test\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\test\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\test\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\test\UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\test\UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_accueil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_accueil.Designer.cs">
+      <DependentUpon>uc_admin_accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_affectation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_affectation.Designer.cs">
+      <DependentUpon>uc_admin_affectation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_affectation_mat_fil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_affectation_mat_fil.Designer.cs">
+      <DependentUpon>uc_admin_affectation_mat_fil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_affectation_mat_prof.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_affectation_mat_prof.Designer.cs">
+      <DependentUpon>uc_admin_affectation_mat_prof.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_enseignant_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_enseignant_1.Designer.cs">
+      <DependentUpon>uc_admin_enseignant_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_enseignant_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_enseignant_2.Designer.cs">
+      <DependentUpon>uc_admin_enseignant_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_matiere_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_matiere_1.Designer.cs">
+      <DependentUpon>uc_admin_matiere_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_matiere_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\admin\uc_admin_matiere_2.Designer.cs">
+      <DependentUpon>uc_admin_matiere_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_acceuil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_acceuil.Designer.cs">
+      <DependentUpon>uc_acceuil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_classe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_classe.Designer.cs">
+      <DependentUpon>uc_classe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_classe_matieres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_classe_matieres.Designer.cs">
+      <DependentUpon>uc_classe_matieres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_etudiantInfos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_etudiantInfos.Designer.cs">
+      <DependentUpon>uc_etudiantInfos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_etudiants.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_etudiants.Designer.cs">
+      <DependentUpon>uc_etudiants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_filieres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_filieres.Designer.cs">
+      <DependentUpon>uc_filieres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_matieres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_matieres.Designer.cs">
+      <DependentUpon>uc_matieres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_modifierNotes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_modifierNotes.Designer.cs">
+      <DependentUpon>uc_modifierNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_voirNotes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\userControls\uc_voirNotes.Designer.cs">
+      <DependentUpon>uc_voirNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metier\Config\MySql_Connection.cs" />
+    <Compile Include="Metier\DAO\DAOImpl.cs" />
+    <Compile Include="Metier\DAO\IDAO.cs" />
+    <Compile Include="Metier\Entites\Classe.cs" />
+    <Compile Include="Metier\Entites\Enseignant.cs" />
+    <Compile Include="Metier\Entites\Etudiant.cs" />
+    <Compile Include="Metier\Entites\Filiere.cs" />
+    <Compile Include="Metier\Entites\Filiere_Matiere.cs" />
+    <Compile Include="Metier\Entites\Login.cs" />
+    <Compile Include="Metier\Entites\Matiere.cs" />
+    <Compile Include="Metier\Entites\Note.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\forms\aboutUs.resx">
+      <DependentUpon>aboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\forms\adminForm.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\forms\authentificationForm.resx">
+      <DependentUpon>authentificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\forms\loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\test\mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\forms\MDI_Form.resx">
+      <DependentUpon>MDI_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\test\mainTestForm.resx">
+      <DependentUpon>mainTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\test\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\test\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\test\UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\admin\uc_admin_accueil.resx">
+      <DependentUpon>uc_admin_accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\admin\uc_admin_affectation.resx">
+      <DependentUpon>uc_admin_affectation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\admin\uc_admin_affectation_mat_fil.resx">
+      <DependentUpon>uc_admin_affectation_mat_fil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\admin\uc_admin_affectation_mat_prof.resx">
+      <DependentUpon>uc_admin_affectation_mat_prof.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\admin\uc_admin_enseignant_1.resx">
+      <DependentUpon>uc_admin_enseignant_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\admin\uc_admin_enseignant_2.resx">
+      <DependentUpon>uc_admin_enseignant_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\admin\uc_admin_matiere_1.resx">
+      <DependentUpon>uc_admin_matiere_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\admin\uc_admin_matiere_2.resx">
+      <DependentUpon>uc_admin_matiere_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\uc_acceuil.resx">
+      <DependentUpon>uc_acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\uc_classe.resx">
+      <DependentUpon>uc_classe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\uc_classe_matieres.resx">
+      <DependentUpon>uc_classe_matieres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\uc_etudiantInfos.resx">
+      <DependentUpon>uc_etudiantInfos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\uc_etudiants.resx">
+      <DependentUpon>uc_etudiants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\uc_filieres.resx">
+      <DependentUpon>uc_filieres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\uc_matieres.resx">
+      <DependentUpon>uc_matieres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\uc_modifierNotes.resx">
+      <DependentUpon>uc_modifierNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\userControls\uc_voirNotes.resx">
+      <DependentUpon>uc_voirNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Gestion des notes_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-synchronize-480.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G_M.png" />
+    <None Include="Resources\G_INF.png" />
+    <None Include="Resources\G_IND.png" />
+    <None Include="Resources\G_E.png" />
+    <None Include="Resources\G_C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G_PEE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matieres.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f8.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nobody_female.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nobody_male.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ensa agadir 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ensa agadir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uiz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uiz_ensa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u_e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ensa_uiz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract_wrL_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="contract_wrL_icon.ico" />
+    <None Include="Resources\M_0.png" />
+    <None Include="Resources\M_00.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
